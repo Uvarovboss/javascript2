@@ -235,17 +235,6 @@ function Car(mark, type, weight, model, places, maxSpeed, color, engineType, amo
     }
 }
 
-function colorCar() {
-    var colour = prompt("Введіть колір автомобіля: silver, blue, black, white");
-    var mas = [Audi, Mustang, Masarati, Subaru, BWV];
-    var carColor = "";
-    for (var i = 0; i < mas.length; i++) {
-        if (mas[i].color == colour) {
-            carColor += mas[i].mark + ' ';
-        }
-    }
-    alert(carColor);
-}
 
 function allInfo() {
     var car = prompt("Виберіть марку автомобіля: Audi, Mustang, Masarati, Subaru, BWV");
@@ -280,4 +269,4 @@ var Subaru = new Car('Subaru', 'Jeep', 2200, 'Impreza', 4, 320, 'black', 'fuel',
 var BWV = new Car('BWV', 'Sedan', 1800, 'E750', 4, 300, 'silver', 'fuel', 80, 7);
 
 allInfo();
-colorCar();
+
